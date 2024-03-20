@@ -1,4 +1,3 @@
-# website2
-# website2
-# website2
-# website2
+git int
+git add .
+git commit -m "<some message>"
