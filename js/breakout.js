@@ -49,6 +49,7 @@ for (let i = 0; i < brickRowCount; i++) {
         bricks[i][j] = {x, y, ...brickInfo
     }
 }
+}
 
 // Draw ball on canvas
 function drawBall() {
