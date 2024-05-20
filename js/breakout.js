@@ -46,10 +46,10 @@ for (let i = 0; i < brickRowCount; i++) {
     for (let j = 0; j < brickColumnCount; j++) {
         const x = i * (brickInfo.w + brickInfo.padding) + brickInfo.offsetX
         const y = j * (brickInfo.h + brickInfo.padding) + brickInfo.offsetY
-        bricks[i][j] = {x, y, ...brickInfo
+        bricks[i][j] = {x, y, ...brickInfo }
     }
 }
-}
+
 
 // Draw ball on canvas
 function drawBall() {
@@ -93,6 +93,7 @@ console.log(bricks)
 
 /// Draw everything
 function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height
     drawPaddle()
     drawBall()
     drawScore()
@@ -101,8 +102,19 @@ function draw() {
 
 // move paddle on canvas 
 function movePaddle() {
-
+    paddle.x = paddle.x + paddle.dx
 }
+
+//keydown event
+function keyDown(e) {
+  //  console.log(e.key)
+    if (e.key == 'ArrowRight' || e.key == 'right') {
+        paddle.dx == paddle.speed
+    }
+}
+
+// Keyboard event handlers
+document.addEventListener('keydown', keyDown)
 
 //update canvas drawing and animation
 function update() {
