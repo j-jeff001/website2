@@ -4,7 +4,8 @@ closeBtn = document.getElementById('close-btn')
 canvas = document.getElementById('canvas')
 ctx = canvas.getContext('2nd')
 
-score = 0
+//testing
+score = 0 
 
 brickRowCount = 9
 brickColumnCount = 5
