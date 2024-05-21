@@ -19,7 +19,7 @@ ball = {
     dy: -4,
 }
 
-// Create Paddle properties
+//Create Paddle properties
 paddle = {
     x: canvas.width / 2 - 40,
     y: canvas.height - 20,
