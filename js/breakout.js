@@ -93,7 +93,7 @@ console.log(bricks)
 
 /// Draw everything
 function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
     drawPaddle()
     drawBall()
     drawScore()
@@ -103,6 +103,7 @@ function draw() {
 // move paddle on canvas 
 function movePaddle() {
     paddle.x = paddle.x + paddle.dx
+}
 
 //wall detection
 if (paddle.x < 0) {
