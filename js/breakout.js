@@ -138,8 +138,21 @@ function keyUp(e) {
 document.addEventListener('keydown', keyDown)
 document.addEventListener('keyup', keyUp)
 
+
+function moveBall() {
+    ball.x = ball.x + ball.dx
+    ball.y = ball.y + ball.dy
+
+    // wall conliston (top)
+    if (ball.y + ball.size < 0 ) {
+        
+    }
+}
+
+
 //update canvas drawing and animation
 function update() {
+    moveBall()
     movePaddle()
     draw()
     requestAnimationFrame(update)
